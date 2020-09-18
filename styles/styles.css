@@ -96,11 +96,15 @@ a:hover {
     text-decoration-line: underline;
 }
 
-.footer {
+footer {
     border: 1px solid #b6b6b6;
     background-color: #F2F2F2;
     
     padding: 0 0 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .country {
