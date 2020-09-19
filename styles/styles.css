@@ -88,8 +88,13 @@ input[value="Google Search"], input[value="I'm Feeling Lucky"] {
 }
 
 .offered {
+    text-align: center;
     font-size: 14px;
     margin-top: 25px;
+}
+
+#rights {
+    font-size: 12px;
 }
 
 a {
