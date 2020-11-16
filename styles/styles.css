@@ -3,58 +3,69 @@ body {
     margin: 0;
 }
 
-.header {
+.main-header {
     display: flex;
     justify-content: flex-end;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
 }
 
-.header > div {
+.main-header > div {
     margin-right: 10px;
     color: #686868;
 }
 
-a.link-header {
+.link-header {
     color: #1f1f1f;
 }
 
-a.link-header:hover {
+.link-header:hover {
     color: #686868;
 }
 
-.user-perfil {
+.user-profile {
     display: flex;
     align-items: center;
 }
 
-img.perfil {
+img.profile {
     border-radius: 32px;
 }
 
-.container, form {
+.container {
     display: grid;
+    grid-template-columns: 1fr;
     justify-items: center;
+    max-width: 500px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
 }
 
-.google-logo {
-    padding-top:109px;
-    margin-bottom: 15px;
+/* //MAIN FORM// */
+
+.div-main-form {
+    max-width: 500px;
+}
+
+.main-form {
+    max-width: 500px;
 }
 
 .border-text-box {
+    max-width: 500px;
     padding: 7px 40px;
-    border: 1px solid #dfdfdf;
+    border: 1px solid #9e9e9e;
     border-radius: 30px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;   
 }
 
 #text-box {
     font-size: 16px;
     
-    width: 400px;
+    max-width: 400px;
     height: 25px;
 
     border: 0;
@@ -62,8 +73,10 @@ img.perfil {
 }
 
 .buttons {
-    padding: 8px;
     display: flex;
+    padding: 8px;
+    justify-content: center;
+
 }
 
 .button-submit {
@@ -108,14 +121,14 @@ a:hover {
 }
 
 footer {
-    border: 1px solid #d6d6d6;
-    background-color: #F2F2F2;
-    
-    padding: 0 0 10px 0;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    padding: 0 0 10px 0;
+
+    border: 1px solid #d6d6d6;
+    background-color: #F2F2F2;
 }
 
 .country {
@@ -139,8 +152,26 @@ hr {
     padding-right: 27px;
 }
 
-.links > a {
+.links02 > a {
     color: #5f6368;
     padding-left: 27px;
 }
 
+@media(max-width: 720px) {
+    .footer-links {
+        display: grid;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .links02, .country {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .links02 > a {
+        margin: 0 10px;
+        padding: 0;
+    }
+}
